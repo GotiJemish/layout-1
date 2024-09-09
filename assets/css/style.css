@@ -233,7 +233,7 @@ header {
 }
 
 .header-top-inner>.child>a,
-span {
+.header-top-inner>.child>span {
   display: inline-block;
   padding: 10px 15px;
   color: #ffffff;
@@ -253,7 +253,7 @@ span {
   color: #fd6502;
 }
 
-.header-top-inner .child .menu ul {
+.header-top-inner .child .menu>ul {
   list-style: none;
   padding: 8px 18px;
   margin: 0;
@@ -265,6 +265,7 @@ span {
   top: 100%;
   left: 0;
   display: none;
+  z-index: 1000;
 }
 
 .header-top-inner .child .menu ul li a {
@@ -916,20 +917,25 @@ outline: none;
   position: absolute;
   top: 20%;
   left: 5%;
-  width: 40%;
+  width: 45%;
 }
 
-.collection-poster-inner .text-content span {
+.collection-poster-inner .text-content>span {
   color: #fd6502;
   text-transform: uppercase;
+  display: inline-block;
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .collection-poster-inner .text-content p {
+  display: block;
   color: #ffffff;
-  font-size: 32px;
-  font-weight: 800;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0;
+margin-bottom: 20px;
 }
 
 /* collection block poster css end */
